@@ -1,0 +1,13 @@
+Index: e2fsprogs/scrub/Makefile.in
+===================================================================
+--- e2fsprogs.orig/scrub/Makefile.in
++++ e2fsprogs/scrub/Makefile.in
+@@ -18,7 +18,7 @@ CONFFILES=	e2scrub.conf
+ 
+ ifeq ($(HAVE_UDEV),yes)
+ UDEV_RULES	= e2scrub.rules
+-UDISKS_RULES	= ext4.rules
++#UDISKS_RULES	= ext4.rules
+ INSTALLDIRS_TGT	+= installdirs-udev
+ INSTALL_TGT	+= install-udev
+ UNINSTALL_TGT	+= uninstall-udev
